@@ -1,0 +1,87 @@
+body, html {
+    margin: 0 10px;
+    padding: 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ad3de;
+    color: white;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.wrapper {
+    min-height: 100vh;
+}
+
+.results {
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    background-color: #9ad3de;
+    color: white;
+}
+
+.cards {
+    
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e3e3e3;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid darkred;
+    padding: 1rem;
+    color: darkred;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+}
+
+.loading {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid darkred;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 5s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 0q;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
